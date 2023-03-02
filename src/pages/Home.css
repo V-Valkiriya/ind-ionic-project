@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Nabla&family=Sofia+Sans&family=Ubuntu&display=swap");
+
+body {
+  background-color: #7cd8b4;
+  font-family: 'Inder';
+  font-style: normal;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 209, 146, 0.92);
+  width: 300px;
+  height: 78px;
+  border-radius: 30px;
+  width: 250px;
+  font-family: 'Inder';
+  font-style: normal;
+  font-size: 20px;
+}
+
+.start-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 180px;
+  height: 90px;
+  font-weight: 400;
+  font-size: 25px;
+  background: #aecfea;
+  border: 3px solid #386e9b;
+  border-radius: 10px;
+  font-family: 'Inder';
+  font-style: normal;
+}
+
