@@ -24,6 +24,12 @@ body {
   font-size: 20px;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 .start-btn {
   margin-left: auto;
   margin-right: auto;
@@ -42,4 +48,11 @@ body {
   font-family: 'Inder';
   font-style: normal;
 }
+
+.start-btn:hover {
+  background: #ffffff;
+  transform: scale(0.9);
+}
+
+
 

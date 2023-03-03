@@ -1,4 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { NavLink } from 'react-router-dom';
 import './Result.css';
 
 const Result: React.FC = () => {
@@ -10,7 +11,9 @@ const Result: React.FC = () => {
           <h1>Excellent!</h1>
           <span><img src="/assets/clap-cats.gif" alt="Cats"
           /></span>
+          <NavLink to={'/home'}>
           <button>Finish</button>
+          </NavLink>
           
         </div>
         <IonHeader collapse="condense">
