@@ -64,6 +64,9 @@ return (
         <Route exact path="/result">
           <Result />
         </Route>
+        <Route path="/">
+          <Redirect to='/home' />
+        </Route>
     </IonReactRouter>
   </IonApp>
 );
