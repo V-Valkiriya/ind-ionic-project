@@ -20,7 +20,7 @@ const Result: React.FC = () => {
         
             <IonToolbar>
               
-              <IonTitle size="large">Blank</IonTitle>
+              <IonTitle size="large"></IonTitle>
               
             </IonToolbar>
             

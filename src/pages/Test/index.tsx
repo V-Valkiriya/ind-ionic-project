@@ -10,6 +10,7 @@ export type IQuestion = {
   answers: {
     id: number;
     name: string;
+    isCorrect: boolean;
   }[]
 }
 
@@ -28,12 +29,12 @@ interface TestProps {
 const Test: React.FC<TestProps> = ({ module }) => {
   const [activeQuestion, setActiveQuestion] = useState<number>(1);
 
-  const [data, setData] = useState<any>();
+  const [data, setData] = useState<any>()
 
   const history = useHistory()
   
   const stop = () => {
-    history.push('/')
+    history.push('/home')
   }
 
 const next = () => {
@@ -41,14 +42,15 @@ const next = () => {
     setActiveQuestion(prev => prev + 1)
   } else {
     history.push('/result')
-    console.log('submit')
+    console.log(data)
   }
 }
 
   return (
     <IonPage>
       <IonContent fullscreen>
-        <div className="header-test">{module.name}</div>
+        <div className='container-test'>
+          <div className="header-test">{module.name}</div>
         {module.questions.map((question) => (
           <Question key={question.id} setData={setData} activeQuestion={activeQuestion} question={question} />
         ))}
@@ -57,10 +59,11 @@ const next = () => {
           <button onClick={stop} className="stop-btn">Stop</button>
           <button onClick={next} className="next-btn">{activeQuestion === module.questions.length ? 'Submit' : 'Next'}</button>
         </div>
+        </div>
 
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large"></IonTitle>
           </IonToolbar>
         </IonHeader>
       </IonContent>

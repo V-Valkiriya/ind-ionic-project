@@ -10,19 +10,23 @@
           "answers": [
             {
               "id": 1,
-              "name": "This is Microsoft document program"
+              "name": "This is Microsoft document program",
+              "isCorrect": false
             },
             {
               "id": 2,
-              "name": "This is cascading style language"
+              "name": "This is cascading style language",
+              "isCorrect": false
             },
             {
               "id": 3,
-              "name": "This is the markup language for creating Web pages"
+              "name": "This is the markup language for creating Web pages",
+              "isCorrect": true
             },
             {
               "id": 4,
-              "name": "This is the markdown language for creating Web pages"
+              "name": "This is the markdown language for creating Web pages",
+              "isCorrect": false
             }
           ]
         },
@@ -32,19 +36,23 @@
             "answers": [
               {
                 "id": 1,
-                "name": "HTML-element in parentheses"
+                "name": "HTML-element in parentheses",
+                "isCorrect": false
               },
               {
                 "id": 2,
-                "name": "HTML-element in angle brackets"
+                "name": "HTML-element in angle brackets",
+                "isCorrect": true
               },
               {
                 "id": 3,
-                "name": "HTML-element without brackets"
+                "name": "HTML-element without brackets",
+                "isCorrect": false
               },
               {
                 "id": 4,
-                "name": "HTML-attribute without brackets"
+                "name": "HTML-attribute without brackets",
+                "isCorrect": false
               }
             ]
           },
@@ -54,19 +62,23 @@
             "answers": [
               {
                 "id": 1,
-                "name": "Yes"
+                "name": "Yes",
+                "isCorrect": false
               },
               {
                 "id": 2,
-                "name": "No"
+                "name": "No",
+                "isCorrect": true
               },
               {
                 "id": 3,
-                "name": "Yes, but there are two exceptions"
+                "name": "Yes, but there are two exceptions",
+                "isCorrect": false
               },
               {
                 "id": 4,
-                "name": "No, but there is two exceptions"
+                "name": "No, but there is two exceptions",
+                "isCorrect": false
               }
             ]
           },
@@ -76,19 +88,179 @@
             "answers": [
               {
                 "id": 1,
-                "name": "Alternative text helps to search for an image on the internet"
+                "name": "Alternative text helps to search for an image on the internet",
+                "isCorrect": false
               },
               {
                 "id": 2,
-                "name": "Alternative text changes the image"
+                "name": "Alternative text changes the image",
+                "isCorrect": false
               },
               {
                 "id": 3,
-                "name": "Alternative text is displayed when graphics loading is disable"
+                "name": "Alternative text is displayed when graphics loading is disable",
+                "isCorrect": true
               },
               {
                 "id": 4,
-                "name": "Alternative text is a caption to the image if it is of poor quality"
+                "name": "Alternative text is a caption to the image if it is of poor quality",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "Is it possible to write comments in HTML code?",
+            "answers": [
+              {
+                "id": 1,
+                "name": "No",
+                "isCorrect": false
+              },
+              {
+                "id": 2,
+                "name": "Yes, we use // symbols",
+                "isCorrect": false
+              },
+              {
+                "id": 3,
+                "name": "Yes, we use <!-- ... --> symbols",
+                "isCorrect": true
+              },
+              {
+                "id": 4,
+                "name": "Yes, we use /* ... */ symbols",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "How to place a copyright sign on a web page?",
+            "answers": [
+              {
+                "id": 1,
+                "name": "Write: copy+",
+                "isCorrect": false
+              },
+              {
+                "id": 2,
+                "name": "Write: &copy",
+                "isCorrect": true
+              },
+              {
+                "id": 3,
+                "name": "Write: &&copy",
+                "isCorrect": false
+              },
+              {
+                "id": 4,
+                "name": "Write: $copy",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Is it possible to create a link that leads to another web page?",
+            "answers": [
+              {
+                "id": 1,
+                "name": "Yes, use attribute: address",
+                "isCorrect": false
+              },
+              {
+                "id": 2,
+                "name": "Yes, use attribute: link",
+                "isCorrect": false
+              },
+              {
+                "id": 3,
+                "name": "No",
+                "isCorrect": false
+              },
+              {
+                "id": 4,
+                "name": "Yes, use attribute: href",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "Can one hyperlink lead to different pages?",
+            "answers": [
+              {
+                "id": 1,
+                "name": "No",
+                "isCorrect": true
+              },
+              {
+                "id": 2,
+                "name": "Yes, if we use two addresses",
+                "isCorrect": false
+              },
+              {
+                "id": 3,
+                "name": "Yes, if you use an additional attribute",
+                "isCorrect": false
+              },
+              {
+                "id": 4,
+                "name": "Yes, if it is a reference to inner elements",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "What does the <br> tag do?",
+            "answers": [
+              {
+                "id": 1,
+                "name": "Doubles the line spacing",
+                "isCorrect": false
+              },
+              {
+                "id": 2,
+                "name": "This tag does not exist",
+                "isCorrect": false
+              },
+              {
+                "id": 3,
+                "name": "Produces a line break in text",
+                "isCorrect": true
+              },
+              {
+                "id": 4,
+                "name": "Connects text",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "What's the difference between <span> and <div> elements?",
+            "answers": [
+              {
+                "id": 1,
+                "name": "No difference, both block elements",
+                "isCorrect": false
+              },
+              {
+                "id": 2,
+                "name": "<span> is an inline element, <div> is a block element",
+                "isCorrect": true
+              },
+              {
+                "id": 3,
+                "name": "<span> is an block element, <div> is a inline element",
+                "isCorrect": false
+              },
+              {
+                "id": 4,
+                "name": "No difference, both inline elements",
+                "isCorrect": false
               }
             ]
           }
@@ -97,12 +269,536 @@
     {
       "id": 2,
       "path": "testcss",
-      "name": "Test CSS"
+      "name": "Test CSS",
+      "questions": [
+        {
+          "id": 1,
+          "title": "Is the rem unit calculated based on the value of the font-size property?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "No, this is the html default value",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "Yes",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "No, it`s calculated based on attributes",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "No, it`s calculated based on the size of the header",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "What is the float property and how does it work?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "Specifies the z-index of an element",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "Specifies the transparency of an element",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "Specifies the size of an element",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "Specifies the side on which the element will be aligned",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "What does the z-index property do?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "Specifies the z-index of an element",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "dictates the stacking order of elements",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "Specifies the size of an element",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "Specifies the side on which the element will be aligned",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Which property can set the background color of an element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "background-color",
+              "isCorrect": true
+            },
+            {
+              "id": 2,
+              "name": "color-background",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "element-background",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "background-element",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "How to set text alignment inside a block?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "align-text",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "text-align",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "display",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "justify-content",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "How to set the transparency of an element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "align-items",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "visibility",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "background",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "opacity",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "How to add an image as a background on a page?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "image: url('file_name.jpg');",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "background-image: url('file_name.jpg');",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "background: image url('file_name.jpg');",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "background: url('file_name.jpg');",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "What is the difference between margin and padding?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "No difference, both define the location of the element",
+              "isCorrect":false
+            },
+            {
+              "id": 2,
+              "name": "No difference, both define the color of the element",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "Margin represents the inner space, padding represents the outside space",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "Margin represents the outside space, padding represents the inner space",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "How to set the cursor on an element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "cursor: finger;",
+              "isCorrect":false
+            },
+            {
+              "id": 2,
+              "name": "cursor: grab;",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "cursor: pointer;",
+              "isCorrect": true
+            },
+            {
+              "id": 4,
+              "name": "cursor: hand;",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "How to hide an element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "hide: true;",
+              "isCorrect":false
+            },
+            {
+              "id": 2,
+              "name": "display: none;",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "element: hidden;",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "visible: false;",
+              "isCorrect": false
+            }
+          ]
+        }
+        ]
     },
     {
       "id": 3,
       "path": "testjs",
-      "name": "Test JS"
+      "name": "Test JS",
+      "questions": [
+        {
+          "id": 1,
+          "title": "What function is used to print a message to the console?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "console.alert()",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "alert()",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "console.log()",
+              "isCorrect": true
+            },
+            {
+              "id": 4,
+              "name": "console.print()",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "What function is used to print a message to the console?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "console.alert()",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "alert()",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "console.log()",
+              "isCorrect": true
+            },
+            {
+              "id": 4,
+              "name": "console.print()",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "How to get the length of a string?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "string.size",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "string.width",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "string.height",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "string.length",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "How to get the length of a string?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "string.size",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "string.width",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "string.height",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "string.length",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "What will the typeof operator return for an array?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "array",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "object",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "string",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "number",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "What method is used to remove the last element from an array?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "array.insert()",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "array.shift()",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "array.removeLast()",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "array.pop()",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "How to get the current date and time?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "new Date()",
+              "isCorrect": true
+            },
+            {
+              "id": 2,
+              "name": "getDate()",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "getDateTime()",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "getCurrentTime()",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "How to change the text content of an HTML element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "element.HTMLinner",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "element.text",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "element.textContent",
+              "isCorrect": true
+            },
+            {
+              "id": 4,
+              "name": "element.value",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "How to create a new HTML element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "createHTMLElement",
+              "isCorrect": false
+            },
+            {
+              "id": 2,
+              "name": "document.create",
+              "isCorrect": true
+            },
+            {
+              "id": 3,
+              "name": "document.createElement",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "addElement",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "How to add a new HTML element inside another HTML element?",
+          "answers": [
+            {
+              "id": 1,
+              "name": "element.appendChild",
+              "isCorrect": true
+            },
+            {
+              "id": 2,
+              "name": "newElement.insertInside",
+              "isCorrect": false
+            },
+            {
+              "id": 3,
+              "name": "element.insert",
+              "isCorrect": false
+            },
+            {
+              "id": 4,
+              "name": "element.createChild",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
     }
 ]
   

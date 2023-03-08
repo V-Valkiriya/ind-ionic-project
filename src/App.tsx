@@ -56,7 +56,7 @@ return (
     
       {!modules && <h1>Loading</h1>}
        {modules?.map((module: any) => (
-        <Route exact path={`/${module.path}`}>
+        <Route key={module.id} exact path={`/${module.path}`}>
           <Test module={module} />
           </Route>
        ))}

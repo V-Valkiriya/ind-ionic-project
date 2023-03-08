@@ -6,6 +6,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
+        <div className='container'>
       <div className='header'>Front-end Developers tests</div>
       <NavLink className='link' to={'/testhtml'}>
       <button className='start-btn'>HTML</button>
@@ -16,11 +17,12 @@ const Home: React.FC = () => {
       <NavLink className='link' to={'/testjs'}>
       <button className='start-btn'>JavaScript</button>
       </NavLink>
+      </div>
       <IonHeader collapse="condense">
       
           <IonToolbar>
             
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large"></IonTitle>
             
           </IonToolbar>
           
