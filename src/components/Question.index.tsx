@@ -7,17 +7,21 @@ interface QuestionProps {
     question: IQuestion;
     activeQuestion: number;
     setData: Function;
+    correct?:'correct' | 'incorrect';
+    giveCorrectAnswer: Function;
 }
 
-const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData}) => {
-  const [correct, setCorrect] = useState<"correct" | "incorrect">()
-  const [right, setRight] = useState<any>(question.answers.find(answer => answer.isCorrect)!)
+const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData, correct, giveCorrectAnswer}) => {
+  const [right, setRight] = useState<any>(question.answers.find(answer => answer.isCorrect)!.id);
+  const [selectedData, setSelectedData] = useState<number>();
 
     const checkAndPush = (e: any) => {
 
     const selected = question.answers.find(answer => answer.id === e.detail.value)!
 
-    setCorrect(selected.isCorrect ? 'correct' : 'incorrect')
+    setSelectedData(selected.id);
+
+    giveCorrectAnswer(selected);
 
     setData((prev: any) => ({...prev, [question.id]: selected.id}))
   }
@@ -28,7 +32,14 @@ const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData}) 
           <p>{question.title}</p>
           <IonRadioGroup onIonChange={checkAndPush}>
           {question.answers.map(answer => (
-          <IonItem color={'light'} key={answer.id}>
+          <IonItem color={
+            (answer.id === selectedData && answer.isCorrect && correct === 'correct') ||
+            (answer.id !== selectedData && answer.isCorrect && correct)
+            ? "success"
+            : answer.id === selectedData && correct === 'incorrect'
+            ? "danger"
+          : "light"
+          } key={answer.id}>
             <IonLabel>{answer.name}</IonLabel>
           <IonRadio value={answer.id}></IonRadio>
           </IonItem>
