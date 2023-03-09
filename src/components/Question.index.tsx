@@ -12,7 +12,6 @@ interface QuestionProps {
 }
 
 const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData, correct, giveCorrectAnswer}) => {
-  const [right, setRight] = useState<any>(question.answers.find(answer => answer.isCorrect)!.id);
   const [selectedData, setSelectedData] = useState<number>();
 
     const checkAndPush = (e: any) => {
