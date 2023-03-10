@@ -57,4 +57,6 @@ const Result: React.FC = () => {
 
 export default Result;
 
+//netli
+
 
