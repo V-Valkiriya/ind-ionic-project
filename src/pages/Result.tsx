@@ -26,7 +26,7 @@ const Result: React.FC = () => {
     if (data) {
     setResults(JSON.parse(data));
    }
-  }, [])
+  }, [history.location.pathname])
 
     return (
         <IonPage>
