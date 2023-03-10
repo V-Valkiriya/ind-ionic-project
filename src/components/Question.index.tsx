@@ -1,8 +1,6 @@
 import { IonItem, IonLabel, IonRadio, IonRadioGroup } from "@ionic/react";
 import React, { useState } from "react";
 import { IQuestion } from "../pages/Test";
-
-
 interface QuestionProps {
     question: IQuestion;
     activeQuestion: number;
@@ -11,12 +9,13 @@ interface QuestionProps {
     giveCorrectAnswer: Function;
 }
 
-const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData, correct, giveCorrectAnswer}) => {
+
+const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData, correct, giveCorrectAnswer}) => {    
   const [selectedData, setSelectedData] = useState<number>();
 
     const checkAndPush = (e: any) => {
 
-    const selected = question.answers.find(answer => answer.id === e.detail.value)!
+    const selected = question.answers.find((answer: any) => answer.id === e.detail.value)!
 
     setSelectedData(selected.id);
 

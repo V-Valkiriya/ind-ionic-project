@@ -24,6 +24,7 @@ export type IModule = {
 
 interface TestProps {
   module: IModule;
+  
 }
 
 const Test: React.FC<TestProps> = ({ module }) => {
@@ -52,8 +53,9 @@ const next = () => {
     setCorrect(undefined)}, 1000);
 
     } else {
-    history.push('/result')
-    console.log(data)
+      localStorage.setItem(`module-${module.id}`, JSON.stringify(data));
+      history.push(`/${module.id}/result`);
+      console.log(data);
   }
 }
 
@@ -85,4 +87,4 @@ const next = () => {
 
 export default Test;
 
-//netly
+

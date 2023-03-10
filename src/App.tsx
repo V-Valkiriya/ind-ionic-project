@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -61,7 +62,7 @@ return (
           </Route>
        ))}
     
-        <Route exact path="/result">
+        <Route exact path="/:id/result">
           <Result />
         </Route>
         <Route path="/">
