@@ -21,7 +21,7 @@ const Question: React.FC<QuestionProps> = ({question, activeQuestion, setData, c
 
     giveCorrectAnswer(selected);
 
-    setData((prev: any) => ({...prev, [question.id]: selected.id}))
+    setData((prev: any) => ({...prev, [question.id]: selected}))
   }
 
     return (

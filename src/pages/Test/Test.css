@@ -111,23 +111,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .container-test {
-    height: 95%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    margin-top: 100px;
   }
-}
+} 
 
-
-/* .var-btn:hover {
-  transform: scale(1.05);
-  border: 5px solid #34A376;
-
-  .var-btn:hover {
-  transform: scale(1.05);
-  border: 5px solid #34A376;
-}
-*/
